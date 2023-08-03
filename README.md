@@ -1,6 +1,7 @@
 # ReverseProxy-in-CyberPanel
 
  ## vHost Conf Setting for No Proxy in Cyber Panel
+ ```console
  docRoot                   $VH_ROOT/public_html
 vhDomain                  $VH_NAME
 vhAliases                 www.$VH_NAME
@@ -78,8 +79,10 @@ context /.well-known/acme-challenge {
 
   }
 }
+```
 
  ## vHost Conf Setting for Reverse Proxy in Cyber Panel
+ ```console
 docRoot                   $VH_ROOT/public_html
 vhDomain                  $VH_NAME
 vhAliases                 www.$VH_NAME
@@ -155,3 +158,4 @@ type proxy
 handler legen5300
 addDefaultCharset off
 }
+```
